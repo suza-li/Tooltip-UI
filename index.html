@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Limelight&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="stylesheet.css">
-        <titel>Tooltip UI</titel>
+        <title>Tooltip UI</title>
     </head>
     <body>
         <div class="navbar">
             <ul>
-                <li id="home">Home</li>
-                <li id="project">Projects</li>
-                <li id="blog">Blog</li>
+                <li>
+                    <a href="home.html" data-tooltip="Welcome home">Home</a>
+                    <span class="dot">•</span>
+                </li>
+                <li>
+                    <a href="home.html" data-tooltip="Projects I completed or on the way">Projects</a>
+                    <span class="dot">•</span>
+                </li>
+                <li>
+                    <a href="home.html" data-tooltip="Read all about the things I am doing">Blog</a>
+                    <span class="dotend">•</span>
+                </li>
             </ul>
         </div>
     </body>

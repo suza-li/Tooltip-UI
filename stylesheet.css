@@ -1,0 +1,60 @@
+.navbar {
+    margin: 40px;
+    border: solid black;
+    border-radius: 15px;
+    border-width: 3px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32pt;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.dot {
+    padding: 0 30px;
+    color: darkgrey;
+}
+
+.dotend {
+    padding-right: 10px;
+    color: white;
+}
+
+a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-size: 18px;
+}
+
+a:hover::after {
+    opacity: 1;
+}
